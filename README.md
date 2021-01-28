@@ -4,7 +4,7 @@ TipTip! is a tip calculator application for iOS.
 
 Submitted by: Lincoln Nguyen
 
-Time spent: 4 hours spent in total
+Time spent: 1 hour spent in total
 
 ## User Stories
 
