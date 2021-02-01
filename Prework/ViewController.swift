@@ -18,7 +18,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var tipPercentages = [0.15, 0.18, 0.2]
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadSettings()
         billAmountTextField.delegate = self
+        billAmountTextField.becomeFirstResponder()
         refreshTipControl()
         refreshTipAndTotal()
     }
@@ -52,6 +54,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func unwindToMainView(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? SettingsViewController {
             tipPercentages = sourceViewController.levels
+            saveSettings()
             recalculateTip()
             refreshTipControl()
             refreshTipAndTotal()
@@ -70,5 +73,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         tipControl.setTitle(String(format: "%d%%", Int(tipPercentages[0]*100)), forSegmentAt: 0)
         tipControl.setTitle(String(format: "%d%%", Int(tipPercentages[1]*100)), forSegmentAt: 1)
         tipControl.setTitle(String(format: "%d%%", Int(tipPercentages[2]*100)), forSegmentAt: 2)
+    }
+    private func saveSettings() {
+        UserDefaults.standard.set(tipPercentages, forKey: "tipPercentages")
+    }
+    private func loadSettings() {
+        tipPercentages = UserDefaults.standard.array(forKey: "tipPercentages") as? [Double] ?? [0.15, 0.18, 0.2]
     }
 }
