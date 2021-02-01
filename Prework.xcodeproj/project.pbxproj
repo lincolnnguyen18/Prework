@@ -15,6 +15,7 @@
 		D4242F2C25C33BF600BC3BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4242F2A25C33BF600BC3BC5 /* LaunchScreen.storyboard */; };
 		D4242F3725C33BF600BC3BC5 /* PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4242F3625C33BF600BC3BC5 /* PreworkTests.swift */; };
 		D4242F4225C33BF700BC3BC5 /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4242F4125C33BF700BC3BC5 /* PreworkUITests.swift */; };
+		D4242F5925C353DA00BC3BC5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4242F5825C353DA00BC3BC5 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		D4242F3D25C33BF700BC3BC5 /* PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4242F4125C33BF700BC3BC5 /* PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITests.swift; sourceTree = "<group>"; };
 		D4242F4325C33BF700BC3BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4242F5825C353DA00BC3BC5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D46FE5A825C7987D00A13B04 /* Pseudocode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Pseudocode.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +106,11 @@
 				D4242F2125C33BF500BC3BC5 /* SceneDelegate.swift */,
 				D4242F2325C33BF500BC3BC5 /* ViewController.swift */,
 				D4242F2525C33BF500BC3BC5 /* Main.storyboard */,
+				D4242F5825C353DA00BC3BC5 /* SettingsViewController.swift */,
 				D4242F2825C33BF600BC3BC5 /* Assets.xcassets */,
 				D4242F2A25C33BF600BC3BC5 /* LaunchScreen.storyboard */,
 				D4242F2D25C33BF600BC3BC5 /* Info.plist */,
+				D46FE5A825C7987D00A13B04 /* Pseudocode.md */,
 			);
 			path = Prework;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				D4242F2425C33BF500BC3BC5 /* ViewController.swift in Sources */,
 				D4242F2025C33BF500BC3BC5 /* AppDelegate.swift in Sources */,
 				D4242F2225C33BF500BC3BC5 /* SceneDelegate.swift in Sources */,
+				D4242F5925C353DA00BC3BC5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
